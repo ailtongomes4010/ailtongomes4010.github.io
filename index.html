@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Frango — Download APK Oficial</title>
+  <meta name="description" content="Baixe com segurança o APK oficial do Frango. Acompanhe novidades, changelog, política de privacidade e suporte." />
+  <link rel="icon" href="/favicon.ico" />
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Tailwind config (cores e fonte base)
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ["Inter", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", "Helvetica Neue", "Arial", "sans-serif"] },
+          colors: {
+            brand: {
+              50: "#eef2ff",
+              100: "#e0e7ff",
+              200: "#c7d2fe",
+              300: "#a5b4fc",
+              400: "#818cf8",
+              500: "#6366f1",
+              600: "#4f46e5",
+              700: "#4338ca",
+              800: "#3730a3",
+              900: "#312e81"
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- SEO & Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Frango — Download APK Oficial" />
+  <meta property="og:description" content="Baixe com segurança o APK oficial do Frango e receba atualizações.">
+  <meta property="og:image" content="/logo-frango.png">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- JSON-LD: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Frango",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "Android",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BRL" },
+    "downloadUrl": "https://github.com/ailtongomes4010/frango/releases/latest/download/frango.apk",
+    "softwareVersion": "1.0.0",
+    "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.8", "ratingCount": "120"}
+  }
+  </script>
+
+  <!-- (Opcional) Google Analytics ou similar - substitua pelo seu ID -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-XXXXXXX');
+  </script> -->
+
+  <!-- (Opcional) Google AdSense - substitua pelo seu ca-pub -->
+  <!--
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  -->
+  <style>
+    /* Suporte a prefers-reduced-motion e foco visível */
+    :root { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) { :root { scroll-behavior: auto; } }
+    .focus-ring:focus { outline: 3px solid #6366f1; outline-offset: 2px; }
+  </style>
+</head>
+<body class="bg-neutral-50 text-neutral-900 antialiased">
+  <a href="#conteudo" class="sr-only focus:not-sr-only focus-ring bg-white text-brand-700 p-2 rounded-b-xl shadow">Pular para o conteúdo</a>
+
+  <!-- Topbar -->
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/70 border-b border-neutral-200">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="/logo-frango.png" alt="Logo do app" class="w-9 h-9 rounded-2xl" loading="lazy" />
+        <span class="font-semibold">Frango</span>
+      </div>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#download" class="hover:text-brand-700">Download</a>
+        <a href="#features" class="hover:text-brand-700">Recursos</a>
+        <a href="#changelog" class="hover:text-brand-700">Changelog</a>
+        <a href="#faq" class="hover:text-brand-700">FAQ</a>
+        <a href="#contato" class="hover:text-brand-700">Contato</a>
+      </nav>
+      <a href="#download" class="md:hidden inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white px-3 py-2 rounded-xl text-sm focus-ring">Baixar</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-white to-brand-50/40">
+    <div class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight">Treine melhor, com um app leve e direto ao ponto.</h1>
+        <p class="mt-5 text-neutral-600 text-lg">Baixe o APK oficial com segurança. Sem anúncios intrusivos, atualizações frequentes e foco total nos seus resultados.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a id="btnDownloadHero" href="https://github.com/ailtongomes4010/frango/releases/latest/download/frango.apk" class="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white px-5 py-3 rounded-2xl font-medium focus-ring" download>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" /></svg>
+            Baixar APK (v<span id="versaoLabel">1.0.0</span>)
+          </a>
+          <a href="#como-instalar" class="inline-flex items-center gap-2 px-5 py-3 rounded-2xl ring-1 ring-inset ring-neutral-300 hover:bg-white focus-ring">Como instalar</a>
+        </div>
+        <p class="mt-3 text-xs text-neutral-500">Assinado e verificado. Tamanho ~<span id="apkSize">--</span>. Última atualização: <time id="ultimaAtualizacao">--/--/----</time></p>
+      </div>
+      <div class="relative">
+        <img src="/screenshot-1.png" alt="Tela do app" class="rounded-3xl shadow-xl ring-1 ring-black/5 w-full" loading="lazy" />
+        <div class="absolute -bottom-4 -left-4 bg-white rounded-2xl p-3 shadow ring-1 ring-black/5">
+          <p class="text-sm font-semibold">+10.000 downloads</p>
+          <p class="text-xs text-neutral-500">Comunidade crescendo todos os dias</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fake Banner Ad (placeholder) -->
+  <section aria-label="área de anúncio" class="max-w-6xl mx-auto px-4">
+    <div class="my-6 rounded-xl bg-neutral-100 border border-neutral-200 p-4 text-center">
+      <div class="text-xs text-neutral-500">Espaço para monetização</div>
+      <div class="h-24 md:h-28 grid place-items-center">
+        <!-- Exemplo de bloco AdSense (substitua data-ad-slot) -->
+        <!--
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXX" data-ad-slot="YYYYYYYYYY" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        -->
+        <p class="text-sm text-neutral-600">Insira aqui seu bloco de anúncio (AdSense/afiliados)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-2xl md:text-3xl font-bold">Por que escolher o app?</h2>
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <article class="p-6 rounded-2xl bg-white border border-neutral-200 shadow-sm">
+        <h3 class="font-semibold">Leve e rápido</h3>
+        <p class="mt-2 text-sm text-neutral-600">Funciona bem em celulares modestos. Sem frescura, só o que importa.</p>
+      </article>
+      <article class="p-6 rounded-2xl bg-white border border-neutral-200 shadow-sm">
+        <h3 class="font-semibold">Treinos personalizáveis</h3>
+        <p class="mt-2 text-sm text-neutral-600">Monte, edite e acompanhe seus treinos com facilidade.</p>
+      </article>
+      <article class="p-6 rounded-2xl bg-white border border-neutral-200 shadow-sm">
+        <h3 class="font-semibold">Privacidade em primeiro lugar</h3>
+        <p class="mt-2 text-sm text-neutral-600">Coletamos o mínimo de dados necessário e com transparência.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Download + Monetização -->
+  <section id="download" class="max-w-6xl mx-auto px-4 py-12">
+    <div class="grid lg:grid-cols-3 gap-6 items-start">
+      <div class="lg:col-span-2 p-6 rounded-2xl bg-white border border-neutral-200 shadow-sm">
+        <h2 class="text-2xl md:text-3xl font-bold">Download seguro</h2>
+        <p class="mt-2 text-neutral-600">Baixe sempre por aqui para garantir a versão oficial e assinada.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a id="btnDownload" href="https://github.com/ailtongomes4010/frango/releases/latest/download/frango.apk" class="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white px-5 py-3 rounded-2xl font-medium focus-ring" download>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" /></svg>
+            Baixar APK agora
+          </a>
+          <a href="#changelog" class="inline-flex items-center gap-2 px-5 py-3 rounded-2xl ring-1 ring-inset ring-neutral-300 hover:bg-white focus-ring">Notas da versão</a>
+        </div>
+        <ul class="mt-4 text-sm text-neutral-600 list-disc list-inside">
+          <li>Requer Android 8.0 (Oreo) ou superior</li>
+          <li>Tamanho: <span id="apkSize2">--</span></li>
+          <li>Assinatura: v2/v3 (Android App Signing)</li>
+        </ul>
+      </div>
+
+      <!-- Cartão de suporte/monetização -->
+      <aside class="p-6 rounded-2xl bg-white border border-neutral-200 shadow-sm">
+        <h3 class="font-semibold">Apoie o projeto 💜</h3>
+        <p class="mt-2 text-sm text-neutral-600">Nos ajude a manter o app gratuito e atualizado.</p>
+        <div class="mt-4 grid gap-3">
+          <a href="https://buymeacoffee.com/SEU_USUARIO" target="_blank" rel="noopener noreferrer" class="w-full text-center px-4 py-2 rounded-xl ring-1 ring-neutral-300 hover:bg-neutral-50 focus-ring">Buy Me a Coffee</a>
+          <a href="https://picpay.me/SEU_USUARIO" target="_blank" rel="noopener noreferrer" class="w-full text-center px-4 py-2 rounded-xl ring-1 ring-neutral-300 hover:bg-neutral-50 focus-ring">PicPay</a>
+          <details class="mt-2">
+            <summary class="cursor-pointer text-sm font-medium">PIX (mostrar QR Code)</summary>
+            <img src="/pix-qr.png" alt="QR Code PIX" class="mt-3 w-full rounded-xl ring-1 ring-black/5" loading="lazy" />
+            <p class="mt-2 text-xs text-neutral-500 break-all">Chave PIX: <span id="chavePix">seu-email@dominio.com</span></p>
+          </details>
+        </div>
+        <div class="mt-4 text-xs text-neutral-500">Links de afiliados (exemplo):
+          <ul class="list-disc list-inside">
+            <li><a href="#" class="underline" rel="nofollow sponsored noopener" target="_blank">Haltere ajustável</a></li>
+            <li><a href="#" class="underline" rel="nofollow sponsored noopener" target="_blank">Corda de pular</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Changelog -->
+  <section id="changelog" class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-2xl md:text-3xl font-bold">Changelog</h2>
+    <p class="mt-2 text-neutral-600">Histórico de atualizações e correções.</p>
+    <div id="listaChangelog" class="mt-6 grid gap-4"></div>
+    <script id="dadosChangelog" type="application/json">{
+      "ultimaAtualizacao":"2025-08-15",
+      "versao":"1.0.0",
+      "tamanho":"8.2 MB",
+      "itens":[
+        {"v":"1.0.0","data":"2025-08-15","notas":["Lançamento inicial","Cadastro e acompanhamento de treinos","Tema claro/escuro"]}
+      ]
+    }</script>
+  </section>
+
+  <!-- Como instalar -->
+  <section id="como-instalar" class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-2xl md:text-3xl font-bold">Como instalar o APK</h2>
+    <ol class="mt-4 space-y-3 list-decimal list-inside text-neutral-700">
+      <li>Toque em <span class="font-semibold">Baixar APK</span>.</li>
+      <li>Quando o Android solicitar, permita <span class="font-semibold">instalação de fontes desconhecidas</span> para o navegador/gerenciador de arquivos.</li>
+      <li>Abra o arquivo baixado e confirme a instalação.</li>
+      <li>Para atualizar, reinstale por cima da versão anterior (não perde dados).</li>
+    </ol>
+    <p class="mt-3 text-xs text-neutral-500">Dica: mantenha sempre sua versão atualizada para novos recursos e correções.</p>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-2xl md:text-3xl font-bold">Perguntas frequentes</h2>
+    <div class="mt-6 grid md:grid-cols-2 gap-4">
+      <details class="p-5 rounded-2xl bg-white border border-neutral-200 shadow-sm">
+        <summary class="font-semibold cursor-pointer">É seguro instalar por aqui?</summary>
+        <p class="mt-2 text-sm text-neutral-700">Sim, este é o site oficial. O arquivo é assinado e livre de modificações.</p>
+      </details>
+      <details class="p-5 rounded-2xl bg-white border border-neutral-200 shadow-sm">
+        <summary class="font-semibold cursor-pointer">O app terá anúncios?</summary>
+        <p class="mt-2 text-sm text-neutral-700">Priorizamos uma experiência limpa. Mantemos a sustentabilidade com doações e links de afiliados.</p>
+      </details>
+      <details class="p-5 rounded-2xl bg-white border border-neutral-200 shadow-sm">
+        <summary class="font-semibold cursor-pointer">Compatibilidade</summary>
+        <p class="mt-2 text-sm text-neutral-700">Android 8.0+ (Oreo) e 64-bit. Funciona offline para funcionalidades básicas.</p>
+      </details>
+      <details class="p-5 rounded-2xl bg-white border border-neutral-200 shadow-sm">
+        <summary class="font-semibold cursor-pointer">Como reportar bugs?</summary>
+        <p class="mt-2 text-sm text-neutral-700">Use o formulário abaixo ou envie e-mail para <span class="underline">suporte@seu-dominio.com</span>.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="max-w-6xl mx-auto px-4 py-12">
+    <div class="grid lg:grid-cols-2 gap-6 items-start">
+      <div class="p-6 rounded-2xl bg-white border border-neutral-200 shadow-sm">
+        <h2 class="text-2xl font-bold">Fale com a gente</h2>
+        <p class="mt-2 text-neutral-600">Sugestões, bugs ou parcerias? Envie uma mensagem.</p>
+        <!-- Formulário via Formspree (substitua a action) -->
+        <form class="mt-6 grid gap-4" action="https://formspree.io/f/SEU_FORM_ID" method="POST">
+          <label class="grid gap-1 text-sm">
+            <span>Seu nome</span>
+            <input required name="nome" class="px-3 py-2 rounded-xl ring-1 ring-neutral-300 focus:ring-brand-500 focus:outline-none" placeholder="Ex: Ana Silva" />
+          </label>
+          <label class="grid gap-1 text-sm">
+            <span>Email</span>
+            <input required name="email" type="email" class="px-3 py-2 rounded-xl ring-1 ring-neutral-300 focus:ring-brand-500 focus:outline-none" placeholder="voce@exemplo.com" />
+          </label>
+          <label class="grid gap-1 text-sm">
+            <span>Mensagem</span>
+            <textarea required name="mensagem" rows="4" class="px-3 py-2 rounded-xl ring-1 ring-neutral-300 focus:ring-brand-500 focus:outline-none" placeholder="Conte o que aconteceu ou sua ideia"></textarea>
+          </label>
+          <button class="inline-flex justify-center items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white px-5 py-3 rounded-2xl font-medium focus-ring">Enviar</button>
+        </form>
+      </div>
+      <aside class="p-6 rounded-2xl bg-white border border-neutral-200 shadow-sm">
+        <h3 class="font-semibold">Transparência & privacidade</h3>
+        <p class="mt-2 text-sm text-neutral-600">Coletamos métricas anônimas de uso para melhorar o app. Não vendemos seus dados.</p>
+        <div class="mt-4 flex flex-wrap gap-3">
+          <button data-dialog="#modal-privacidade" class="px-4 py-2 rounded-xl ring-1 ring-neutral-300 hover:bg-neutral-50 focus-ring">Política de Privacidade</button>
+          <button data-dialog="#modal-termos" class="px-4 py-2 rounded-xl ring-1 ring-neutral-300 hover:bg-neutral-50 focus-ring">Termos de Uso</button>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="border-t border-neutral-200 py-10">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-neutral-600">© <span id="ano"></span> Frango — Todos os direitos reservados.</p>
+      <nav class="flex items-center gap-4 text-sm">
+        <a href="#contato" class="hover:text-brand-700">Contato</a>
+        <a href="#" class="hover:text-brand-700">Twitter</a>
+        <a href="#" class="hover:text-brand-700">Instagram</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Modais -->
+  <dialog id="modal-privacidade" class="rounded-2xl p-0 w-[min(92vw,720px)]">
+    <div class="p-6">
+      <h3 class="text-xl font-semibold">Política de Privacidade</h3>
+      <div class="mt-3 text-sm text-neutral-700 max-h-[60vh] overflow-auto space-y-3">
+        <p>Coletamos dados mínimos necessários para o funcionamento do site e métricas anônimas. Caso use anúncios, parceiros podem usar cookies para personalização.</p>
+        <p>Você pode a qualquer momento solicitar remoção de dados enviados via formulário.</p>
+      </div>
+      <div class="mt-6 flex justify-end gap-2"><button data-close class="px-4 py-2 rounded-xl ring-1 ring-neutral-300">Fechar</button></div>
+    </div>
+  </dialog>
+
+  <dialog id="modal-termos" class="rounded-2xl p-0 w-[min(92vw,720px)]">
+    <div class="p-6">
+      <h3 class="text-xl font-semibold">Termos de Uso</h3>
+      <div class="mt-3 text-sm text-neutral-700 max-h-[60vh] overflow-auto space-y-3">
+        <p>Ao baixar e instalar o APK, você concorda em utilizá-lo conforme as leis aplicáveis e por sua conta e risco. Fornecemos o app “como está”.</p>
+        <p>Não nos responsabilizamos por danos indiretos ou perda de dados decorrentes do uso.</p>
+      </div>
+      <div class="mt-6 flex justify-end gap-2"><button data-close class="px-4 py-2 rounded-xl ring-1 ring-neutral-300">Fechar</button></div>
+    </div>
+  </dialog>
+
+  <!-- Cookie banner simples -->
+  <div id="cookie-banner" class="fixed bottom-3 left-1/2 -translate-x-1/2 max-w-xl w-[92vw] bg-white border border-neutral-200 shadow-xl rounded-2xl p-4 hidden">
+    <p class="text-sm text-neutral-700">Usamos cookies essenciais e, opcionalmente, para métricas/anúncios. Você aceita?</p>
+    <div class="mt-3 flex gap-3 justify-end">
+      <button id="cookieRecusar" class="px-3 py-2 rounded-xl ring-1 ring-neutral-300">Recusar</button>
+      <button id="cookieAceitar" class="px-3 py-2 rounded-xl bg-brand-600 text-white">Aceitar</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    // Utilitários
+    const $ = (sel, el=document) => el.querySelector(sel);
+    const $$ = (sel, el=document) => Array.from(el.querySelectorAll(sel));
+
+    // Preenche dados do changelog a partir do JSON embutido
+    (function initChangelog(){
+      try {
+        const data = JSON.parse(document.getElementById('dadosChangelog').textContent);
+        const box = document.getElementById('listaChangelog');
+        document.getElementById('versaoLabel').textContent = data.versao;
+        document.getElementById('ultimaAtualizacao').textContent = new Date(data.ultimaAtualizacao + 'T00:00:00').toLocaleDateString('pt-BR');
+        for (const item of data.itens) {
+          const card = document.createElement('article');
+          card.className = 'p-5 rounded-2xl bg-white border border-neutral-200 shadow-sm';
+          card.innerHTML = `<div class="flex items-center justify-between"><h3 class="font-semibold">v${item.v}</h3><time class="text-sm text-neutral-500">${new Date(item.data+'T00:00:00').toLocaleDateString('pt-BR')}</time></div><ul class="mt-2 text-sm text-neutral-700 list-disc list-inside">${item.notas.map(n=>`<li>${n}</li>`).join('')}</ul>`;
+          box.appendChild(card);
+        }
+        // Atualiza tamanho exibido
+        $('#apkSize').textContent = data.tamanho;
+        $('#apkSize2').textContent = data.tamanho;
+      } catch(e) { console.warn('Changelog inválido', e); }
+    })();
+
+    // Modal simples
+    $$('[data-dialog]').forEach(btn=>{
+      btn.addEventListener('click', ()=>{ const dlg = $(btn.getAttribute('data-dialog')); if(dlg) dlg.showModal(); });
+    });
+    $$('dialog [data-close]').forEach(btn=>{
+      btn.addEventListener('click', ()=> btn.closest('dialog')?.close());
+    });
+
+    // Cookie banner (consentimento básico)
+    (function cookies(){
+      const KEY = 'consent.v1';
+      if(!localStorage.getItem(KEY)) {
+        document.getElementById('cookie-banner').classList.remove('hidden');
+      }
+      document.getElementById('cookieAceitar').onclick = ()=>{ localStorage.setItem(KEY, 'yes'); document.getElementById('cookie-banner').remove(); };
+      document.getElementById('cookieRecusar').onclick = ()=>{ localStorage.setItem(KEY, 'no'); document.getElementById('cookie-banner').remove(); };
+    })();
+
+    // Rastreia cliques de download (local)
+    (function trackDownloads(){
+      const KEY='downloads.total';
+      function inc(){ const n = Number(localStorage.getItem(KEY)||0)+1; localStorage.setItem(KEY, n); }
+      $('#btnDownload')?.addEventListener('click', inc);
+      $('#btnDownloadHero')?.addEventListener('click', inc);
+    })();
+
+    // Ano no rodapé
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+
+  <noscript>
+    Habilite o JavaScript para melhor experiência. O download do APK continua disponível mesmo sem JS.
+  </noscript>
+</body>
+</html>
