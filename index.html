@@ -91,7 +91,7 @@
         <a href="#faq" class="hover:text-brand-700">FAQ</a>
         <a href="#contato" class="hover:text-brand-700">Contato</a>
       </nav>
-       <a href="#download" class="md:hidden inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white px-3 py-2 rounded-xl text-sm focus-ring">Baixar</a> 
+      <!-- <a href="#download" class="md:hidden inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white px-3 py-2 rounded-xl text-sm focus-ring">Baixar</a> -->
     </div>
   </header>
 
@@ -102,10 +102,9 @@
         <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight">Treine melhor, com um app leve e direto ao ponto.</h1>
         <p class="mt-5 text-neutral-600 text-lg">Baixe o APK oficial com segurança. Sem anúncios intrusivos, atualizações frequentes e foco total nos seus resultados.</p>
         <div class="mt-8 flex flex-wrap gap-3">
-         <a href="https://github.com/ailtongomes4010/frango/releases/latest/download/frango1.0.0.apk" class="download-btn"> </a>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" /></svg>
-            Baixar APK (v<span id="versaoLabel">1.0.0</span>)
-          </a>
+        <a id="btnDownload" href="https://github.com/ailtongomes4010/frango/releases/latest/download/frango1.0.0.apk" class="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white px-5 py-3 rounded-2xl font-medium focus-ring ring-1 ring-inset ring-neutral-300" download> Baixar APK (v<span id="versaoLabel">1.0.0</span>)
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" /></svg> </a>         
+          </a> 
           <a href="#como-instalar" class="inline-flex items-center gap-2 px-5 py-3 rounded-2xl ring-1 ring-inset ring-neutral-300 hover:bg-white focus-ring">Como instalar</a>
         </div>
         <p class="mt-3 text-xs text-neutral-500">Assinado e verificado. Tamanho ~<span id="apkSize">--</span>. Última atualização: <time id="ultimaAtualizacao">--/--/----</time></p>
@@ -125,15 +124,15 @@
     <div class="my-6 rounded-xl bg-neutral-100 border border-neutral-200 p-4 text-center">
       <div class="text-xs text-neutral-500">Espaço para monetização</div>
       <div class="h-24 md:h-28 grid place-items-center">
-        <!-- Exemplo de bloco AdSense (substitua data-ad-slot) -->
+         Exemplo de bloco AdSense (substitua data-ad-slot) -->
         <!--
         <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXX" data-ad-slot="YYYYYYYYYY" data-ad-format="auto" data-full-width-responsive="true"></ins>
         <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
         -->
-        <!-- <p class="text-sm text-neutral-600">Insira aqui seu bloco de anúncio (AdSense/afiliados)</p> -->
+        <p class="text-sm text-neutral-600">Insira aqui seu bloco de anúncio (AdSense/afiliados)</p>
       </div>
     </div>
-  </section>
+  </section> 
 
   <!-- Features -->
   <section id="features" class="max-w-6xl mx-auto px-4 py-12">
@@ -180,11 +179,11 @@
         <p class="mt-2 text-sm text-neutral-600">Nos ajude a manter o app gratuito e atualizado.</p>
         <div class="mt-4 grid gap-3">
           <a href="https://buymeacoffee.com/SEU_USUARIO" target="_blank" rel="noopener noreferrer" class="w-full text-center px-4 py-2 rounded-xl ring-1 ring-neutral-300 hover:bg-neutral-50 focus-ring">Buy Me a Coffee</a>
-          <a href="https://picpay.me/SEU_USUARIO" target="_blank" rel="noopener noreferrer" class="w-full text-center px-4 py-2 rounded-xl ring-1 ring-neutral-300 hover:bg-neutral-50 focus-ring">PicPay</a>
+          <a href="https://www.bancowill.com.br/pagar/0832e006-b32f-49b7-92a7-fb1f288b37a8" target="_blank" rel="noopener noreferrer" class="w-full text-center px-4 py-2 rounded-xl ring-1 ring-neutral-300 hover:bg-neutral-50 focus-ring">Banco Will</a>
           <details class="mt-2">
             <summary class="cursor-pointer text-sm font-medium">PIX (mostrar QR Code)</summary>
             <img src="assets/pix-qr.png" alt="QR Code PIX" class="mt-3 w-full rounded-xl ring-1 ring-black/5" loading="lazy" />
-            <p class="mt-2 text-xs text-neutral-500 break-all">Chave PIX: <span id="chavePix">seu-email@dominio.com</span></p>
+            <p class="mt-2 text-xs text-neutral-500 break-all">Chave PIX: <span id="chavePix">0832e006-b32f-49b7-92a7-fb1f288b37a8</span></p>
           </details>
         </div>
         <div class="mt-4 text-xs text-neutral-500">Links de afiliados (exemplo):
@@ -194,6 +193,7 @@
           </ul>
         </div>
       </aside>
+
     </div>
   </section>
 
