@@ -26,6 +26,9 @@
                             800: "#3730a3",
                             900: "#312e81"
                         }
+                    },
+                    maxWidth: {
+                      '48': '12rem',
                     }
                 }
             }
@@ -102,15 +105,15 @@
                     </div>
                     <p class="mt-3 text-xs text-neutral-500">Assinado e verificado. Tamanho ~<span class="apk-size">--</span>. Última atualização: <time id="ultimaAtualizacao">--/--/----</time></p>
                 </div>
-                <div class="relative grid md:grid-cols-3 gap-6">
+                <div class="relative flex flex-col items-center md:grid md:grid-cols-3 gap-6">
                     <a href="assets/screenshot-1.png" data-lightbox="screenshot" class="cursor-pointer">
-                        <img src="assets/screenshot-1.png" alt="Tela do app" class="rounded-3xl shadow-xl ring-1 ring-black/5 w-full md:col-span-1" loading="lazy" />
+                        <img src="assets/screenshot-1.png" alt="Tela do app" class="rounded-3xl shadow-xl ring-1 ring-black/5 max-w-[12rem] w-full md:w-auto" loading="lazy" />
                     </a>
                     <a href="assets/screenshot-2.png" data-lightbox="screenshot" class="cursor-pointer">
-                        <img src="assets/screenshot-2.png" alt="Tela do app - Treinos" class="rounded-3xl shadow-xl ring-1 ring-black/5 w-full" loading="lazy" />
+                        <img src="assets/screenshot-2.png" alt="Tela do app - Treinos" class="rounded-3xl shadow-xl ring-1 ring-black/5 max-w-[12rem] w-full md:w-auto" loading="lazy" />
                     </a>
                     <a href="assets/screenshot-3.png" data-lightbox="screenshot" class="cursor-pointer">
-                        <img src="assets/screenshot-3.png" alt="Tela do app - Gráficos" class="rounded-3xl shadow-xl ring-1 ring-black/5 w-full" loading="lazy" />
+                        <img src="assets/screenshot-3.png" alt="Tela do app - Gráficos" class="rounded-3xl shadow-xl ring-1 ring-black/5 max-w-[12rem] w-full md:w-auto" loading="lazy" />
                     </a>
                 </div>
             </div>
