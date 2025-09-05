@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sobre — Frango</title>
+  <meta name="description" content="Saiba mais sobre o app Frango, missão, valores e como o app ajuda nos seus treinos.">
+  <link rel="icon" href="assets/frango1.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-50 text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-50">
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/70 border-b border-neutral-200 dark:bg-neutral-900/70 dark:border-neutral-700">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3">
+        <img src="assets/frango1.png" alt="Logo" class="w-9 h-9 rounded-2xl" loading="lazy" />
+        <span class="font-semibold">Frango</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="/#download" class="hover:text-brand-700">Download</a>
+        <a href="/#features" class="hover:text-brand-700">Recursos</a>
+        <a href="/#faq" class="hover:text-brand-700">FAQ</a>
+        <a href="/sobre.html" class="text-brand-700 font-medium">Sobre</a>
+        <a href="/privacidade.html" class="hover:text-brand-700">Privacidade</a>
+        <a href="/termos.html" class="hover:text-brand-700">Termos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-12">
+    <h1 class="text-3xl md:text-4xl font-extrabold">Sobre o Frango</h1>
+    <p class="mt-4 text-neutral-700 dark:text-neutral-300">
+      O Frango é um aplicativo leve para planejar e acompanhar treinos. Nosso foco é simplicidade,
+      velocidade e privacidade — sem distrações, sem coleta excessiva de dados.
+    </p>
+    <section class="mt-8 grid md:grid-cols-3 gap-6">
+      <article class="p-6 rounded-2xl bg-white border border-neutral-200 shadow-sm dark:bg-neutral-800 dark:border-neutral-700">
+        <h2 class="font-semibold">Missão</h2>
+        <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-300">Ajudar pessoas a treinarem melhor com um app direto ao ponto.</p>
+      </article>
+      <article class="p-6 rounded-2xl bg-white border border-neutral-200 shadow-sm dark:bg-neutral-800 dark:border-neutral-700">
+        <h2 class="font-semibold">O que nos diferencia</h2>
+        <ul class="mt-2 text-sm text-neutral-600 list-disc list-inside dark:text-neutral-300">
+          <li>Funciona bem em celulares modestos</li>
+          <li>Modo escuro e temas</li>
+          <li>Sem anúncios intrusivos</li>
+        </ul>
+      </article>
+      <article class="p-6 rounded-2xl bg-white border border-neutral-200 shadow-sm dark:bg-neutral-800 dark:border-neutral-700">
+        <h2 class="font-semibold">Contato</h2>
+        <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-300">
+          Dúvidas, parcerias ou bugs: <a class="underline" href="mailto:frango1232025@gmail.com">frango1232025@gmail.com</a>
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="border-t border-neutral-200 py-10 dark:border-neutral-700">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-neutral-600 dark:text-neutral-300">© <span id="ano"></span> Frango — Todos os direitos reservados.</p>
+      <nav class="flex items-center gap-4 text-sm">
+        <a href="/sobre.html" class="hover:text-brand-700">Sobre</a>
+        <a href="/privacidade.html" class="hover:text-brand-700">Privacidade</a>
+        <a href="/termos.html" class="hover:text-brand-700">Termos</a>
+        <a href="/#contato" class="hover:text-brand-700">Contato</a>
+      </nav>
+    </div>
+  </footer>
+  <script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+</body>
+</html>
