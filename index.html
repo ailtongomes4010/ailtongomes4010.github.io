@@ -195,28 +195,36 @@
                     </div>
                 </aside>
             </div>
-        </section>
+        <section id="changelog" class="max-w-6xl mx-auto px-4 py-12">
+  <h2 class="text-2xl md:text-3xl font-bold">Changelog</h2>
+  <p class="mt-2 text-neutral-600 dark:text-neutral-300">Histórico de atualizações e correções.</p>
 
+        <!-- container que seu JS espera existir -->
+        <div id="listaChangelog" class="mt-6 grid gap-4"></div>
+
+        <!-- dados JSON do changelog (pode ficar aqui) -->
         <script id="dadosChangelog" type="application/json">
         {
-        "ultimaAtualizacao": "2025-09-10",
-        "versao": "1.1",
-        "tamanho": "66,6 MB",
-        "itens": [
+            "ultimaAtualizacao": "2025-09-10",
+            "versao": "1.1",
+            "tamanho": "66,6 MB",
+            "itens": [
             {
-            "v": "1.1",
-            "data": "2025-09-10",
-            "notas": [
+                "v": "1.1",
+                "data": "2025-09-10",
+                "notas": [
                 "Add Exercícios",
-                "Add calendário caso o usuário esqueça de registrar treino passado",
+                "Add calendário, caso o usuário esqueça de registrar o treino passado",
                 "Add tema transparente",
                 "Lógica do gráfico atualizada",
                 "Bug no cronômetro corrigido"
-            ]
+                ]
             }
-        ]
+            ]
         }
         </script>
+        </section>
+
 
 
         <section id="como-instalar" class="max-w-6xl mx-auto px-4 py-12">
